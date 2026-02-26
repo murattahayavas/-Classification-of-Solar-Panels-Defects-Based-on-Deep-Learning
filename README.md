@@ -17,6 +17,7 @@ All large datasets and model weights are **kept locally** and excluded from Git 
   - `train_yolov12_classification.py` – YOLO multi-class fault classification  
   - `train_yolov12_object_detection.py` – YOLO-based object detection training  
   - `train_yolov8.py`, `train_classification.py`, `train_detection_frcnn_ae.py` – other training variants  
+  - `resnet train code .py` – ResNet-50 classifier training using pure PyTorch / torchvision  
   - `convert_*_to_yolo*.py`, `merge_yolo_dataset.py`, `organize_dataset.py` – dataset conversion / organization helpers  
   - `gradcam_produce.py` – Grad-CAM visualization for trained classifiers  
 - **`data/detection_yolo*/`**: YOLO detection datasets, configs, and helper scripts  
@@ -77,6 +78,9 @@ python data/scripts/train_yolov12_object_detection.py
 
 # YOLOv8-based training
 python data/scripts/train_yolov8.py
+
+# ResNet-50 classification (torchvision)
+python "data/scripts/resnet train code .py"
 
 # Grad-CAM visualization for a trained classifier
 python data/scripts/gradcam_produce.py
