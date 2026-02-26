@@ -1,0 +1,21 @@
+from ultralytics import YOLO
+import time
+
+model = YOLO("C:/Users/Taha/Desktop/Solar Panel AI/data/models/yolov12m.pt")  
+
+img = 'C:/Users/Taha/Desktop/Solar Panel AI/data/detection_yolo_rgb_multiclass/images/test/3.JPG'  # herhangi bir görsel
+
+# Isıtma
+for _ in range(5):
+    model(img)
+
+# FPS ölçümü
+start = time.time()
+for _ in range(100):
+    model(img)
+end = time.time()
+
+avg_time = (end - start) / 100
+fps = 1 / avg_time
+
+print(f"FPS: {fps}")

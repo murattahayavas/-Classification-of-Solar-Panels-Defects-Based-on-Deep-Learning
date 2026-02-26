@@ -1,0 +1,48 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.env
+.venv
+venv/
+ENV/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs
+*.log
+
+# Model weights & checkpoints (downloadable or re-trainable)
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# Training runs and experiment outputs
+/runs/
+/yolo11n.pt
+
+# Large datasets and heavy assets (kept locally, not versioned)
+data/classification/
+data/detection_yolo/
+data/detection_yolo_rgb_multiclass/
+data/PVELAD/
+data/PV-Multi-Defect-main/JPEGImages/
+data/PV-Multi-Defect-main/Annotations/
+data/PVEL-AD-main/
+/ilkel dataset do not use for traning/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
